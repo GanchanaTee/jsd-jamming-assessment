@@ -3,7 +3,7 @@ const clientId = 'd3ff024c4a59411c91a21acee7a64daa';
 
 // Have to add this to your accepted Spotify redirect URIs on the Spotify API.
 // const redirectUri = 'http://localhost:3000/';
-const redirectUri = 'http://substantial-news.surge.sh';
+const redirectUri = 'http://jammming-tee.surge.sh';
 
 const spotifyUrl = `https://accounts.spotify.com/authorize?response_type=token&scope=playlist-modify-public&client_id=${clientId}&redirect_uri=${redirectUri}`;
 let accessToken = undefined;
