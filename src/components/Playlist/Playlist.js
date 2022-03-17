@@ -3,6 +3,7 @@ import TrackList from '../TrackList/TrackList';
 
 function Playlist(props) {
 
+  // Handle( maintence) input value and pass event into updatePlaylistName function in App.js
   const handleNameChange = (e) => {
     props.onNameChange(e.target.value);
   }

@@ -1,6 +1,7 @@
 // TODO: Get Client ID from https://developer.spotify.com/dashboard/ and put it here
 const clientId = 'd3ff024c4a59411c91a21acee7a64daa';
 
+// Have to add this to your accepted Spotify redirect URIs on the Spotify API.
 const redirectUri = 'http://localhost:3000/';
 const spotifyUrl = `https://accounts.spotify.com/authorize?response_type=token&scope=playlist-modify-public&client_id=${clientId}&redirect_uri=${redirectUri}`;
 let accessToken = undefined;
@@ -45,8 +46,8 @@ const Spotify = {
       });
   },
 
-  async savePlaylist(name, trackIds) {
-    if (Array.isArray(trackIds) && trackIds.length) {
+  async savePlaylist(name, trackUris) {
+    if (Array.isArray(trackUris) && trackUris.length) {
       const createPlaylistUrl = `https://api.spotify.com/v1/me/playlists`;
       const response = await fetch(createPlaylistUrl, {
         method: 'POST',
@@ -67,7 +68,7 @@ const Spotify = {
             Authorization: `Bearer ${accessToken}`,
           },
           body: JSON.stringify({
-            uris: trackIds,
+            uris: trackUris,
           }),
         });
       }

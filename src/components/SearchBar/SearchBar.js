@@ -4,12 +4,15 @@ import React,{ useState } from 'react';
 
 function SearchBar(props) {
 
+  // keep searching word  
   const [term, setTerm] = useState('')
 
+  // pass term into search function in App.js
   const search = () => {
     props.onSearch(term);
   }
 
+  // handle input value
   const handleTermChange = (e) => {
     setTerm(e.target.value)
   }

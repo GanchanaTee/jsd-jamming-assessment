@@ -4,6 +4,8 @@ import Track from '../Track/Track'
 
 function TrackList(props) {
 
+  // recieve searchResults as tracks from SearchResults.js and map with Track component 
+
   return (
     <div className="TrackList">
       {

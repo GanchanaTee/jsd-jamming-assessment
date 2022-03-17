@@ -12,11 +12,13 @@ function App() {
   const [playlistTracks, setPlaylistTracks] = useState([])
 
   useEffect(() => {
+    // Use to get access token before "GET" or "POST" : Parameter Header must be Authorization: Bearer <Access Token>
     Spotify.getAccessToken()
   }, []);
 
   const addTrack = (track) => {
     let tracks = [...playlistTracks];
+    // check if it had => return function
     if (tracks.find(savedTrack => savedTrack.id === track.id)) {
       return;
     }
@@ -26,6 +28,7 @@ function App() {
 
   const removeTrack = (track) => {
     let tracks = [...playlistTracks];
+    // filter with not same id condition
     tracks = tracks.filter(currentTrack => currentTrack.id !== track.id);
     setPlaylistTracks(tracks)
   }
@@ -37,6 +40,7 @@ function App() {
   const savePlaylist =  () => {
     const trackUris = playlistTracks.map(track => track.uri);
     Spotify.savePlaylist(playlistName, trackUris).then(() => {
+      // Reset playlistName and playlistTracks after save playlist
       setPlaylistName('')
       setPlaylistTracks([])
     })
