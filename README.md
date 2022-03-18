@@ -4,6 +4,16 @@
 Here!! It's my web from Surge deploy
 ## [My result](http://jammming-tee.surge.sh)
 
+Reference
+GetAccessToken
+- https://developer.spotify.com/documentation/general/guides/authorization/code-flow/
+Search 
+- https://developer.spotify.com/documentation/web-api/reference/#/operations/search
+Create playlist
+- https://developer.spotify.com/documentation/web-api/reference/#/operations/create-playlist
+Update playlist
+- https://developer.spotify.com/documentation/web-api/reference/#/operations/reorder-or-replace-playlists-tracks
+
 ## [View in codecademy](https://www.codecademy.com/paths/build-web-apps-with-react/tracks/react-capstone/modules/jammming-capstone/projects/jammming-prj)
 
 [Completed Project Demo](https://jsd-1-react-jamming.vercel.app/)
