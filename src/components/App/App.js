@@ -23,7 +23,10 @@ function App() {
       return;
     }
     tracks.push(track);
+    let results = [...searchResults]
+    results = results.filter(currentTrack => currentTrack.id !== track.id); 
     setPlaylistTracks(tracks)
+    setSearchResults(results)
   }
 
   const removeTrack = (track) => {
