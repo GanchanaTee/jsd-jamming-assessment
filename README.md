@@ -11,7 +11,7 @@ Currently My Spotify API is currently Development mode.
 If you want to use or test it, Please send your spotify email to me in ganchana78@gmail.com .
 
 ## Jammming
-<img src="./src/components/img/jammmingPreview.jpg" alt="not found" title="Jammming preview" height="50%">
+<img src="./src/components/img/jammmingPreview.jpg" alt="not found" title="Jammming preview">
 
 ## Function :
 * 
@@ -40,8 +40,8 @@ npm run start
 
 👤 **Ganchana Youpaisan(Tee)**
 
-* Github: [@GanchanaTee](https://github.com/https:\/\/github.com\/GanchanaTee)
-* LinkedIn: [@Ganchana Youpaisan](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/ganchana-youpaisan-757823166\/)
+* Github: [@https://github.com/GanchanaTee](https://github.com/https:\/\/github.com\/GanchanaTee)
+* LinkedIn: [@https://www.linkedin.com/in/ganchana-youpaisan-757823166/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/ganchana-youpaisan-757823166\/)
 
 ## Show your support
 
