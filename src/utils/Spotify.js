@@ -5,7 +5,9 @@ const clientId = 'd3ff024c4a59411c91a21acee7a64daa';
 // const redirectUri = 'http://localhost:3000/';
 const redirectUri = 'http://jammming-tee.surge.sh';
 
+// This is a url for get access token
 const spotifyUrl = `https://accounts.spotify.com/authorize?response_type=token&scope=playlist-modify-public&client_id=${clientId}&redirect_uri=${redirectUri}`;
+
 let accessToken = undefined;
 let expiresIn = undefined;
 
@@ -14,19 +16,29 @@ const Spotify = {
     if (accessToken) {
       return accessToken;
     }
+    //return [0="access_token=accessToken", 1="accessToken"]
     const urlAccessToken = window.location.href.match(/access_token=([^&]*)/);
+
+    //return [0="expires_in=expiresIn", 1= "expiresIn"]
     const urlExpiresIn = window.location.href.match(/expires_in=([^&]*)/);
+    
     if (urlAccessToken && urlExpiresIn) {
       accessToken = urlAccessToken[1];
       expiresIn = urlExpiresIn[1];
+      
+      // wait until access token expires to set access to ''
       window.setTimeout(() => (accessToken = ''), expiresIn * 1000);
+
+      // This clears the parameters, allowing us to grab a new access token when it expires.
       window.history.pushState('Access Token', null, '/');
+      
     } else {
       window.location = spotifyUrl;
     }
   },
 
   async search(term) {
+    const accessToken = Spotify.getAccessToken();
     const searchUrl = `https://api.spotify.com/v1/search?type=track&q=${term.replace(' ', '%20')}`;
     return fetch(searchUrl, {
       headers: {
@@ -49,6 +61,7 @@ const Spotify = {
   },
 
   async savePlaylist(name, trackUris) {
+    const accessToken = Spotify.getAccessToken();
     if (Array.isArray(trackUris) && trackUris.length) {
       const createPlaylistUrl = `https://api.spotify.com/v1/me/playlists`;
       const response = await fetch(createPlaylistUrl, {
@@ -64,7 +77,7 @@ const Spotify = {
       if (playlistId) {
         const replacePlaylistTracksUrl = `https://api.spotify.com/v1/playlists/${playlistId}/tracks`;
         await fetch(replacePlaylistTracksUrl, {
-          method: 'POST',
+          method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
             Authorization: `Bearer ${accessToken}`,

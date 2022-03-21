@@ -1,23 +1,45 @@
-# Jammming
+<h1 align="center">Welcome to Jammming 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  <a href="Currently Spotify API is still in Development mode. " target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+</p>
 
+> Assignment project from Generation Thailand in Junior Software Developer Bootcamp #1 (Source problem from codecademy) 
 
-Here!! It's my web from Surge deploy
-## [My result](http://jammming-tee.surge.sh)
+### 🏠 [Homepage](http://jammming-tee.surge.sh/)
 
-Reference
-- GetAccessToken: https://developer.spotify.com/documentation/general/guides/authorization/code-flow/
-- Search: https://developer.spotify.com/documentation/web-api/reference/#/operations/search
-- Create playlist: https://developer.spotify.com/documentation/web-api/reference/#/operations/create-playlist
-- Update playlist: https://developer.spotify.com/documentation/web-api/reference/#/operations/reorder-or-replace-playlists-tracks
+### ✨ [Demo](http://jammming-tee.surge.sh/)
 
-## [View in codecademy](https://www.codecademy.com/paths/build-web-apps-with-react/tracks/react-capstone/modules/jammming-capstone/projects/jammming-prj)
+## Install
 
-[Completed Project Demo](https://jsd-1-react-jamming.vercel.app/)
+```sh
+npm install
+```
 
-In this project, you will build a React web application called Jammming. You will use your knowledge of React components, passing state, and requests with the Spotify API to build a website that allows users to search the Spotify library, create a custom playlist, then save it to their Spotify account.
+## Usage
 
-We’ve broken the Jammming project into 13 sections. Each section contains a descriptive header with an introductory step followed by a set of steps that guide you to the outcome. The first step of each section will explain the goal and provide a brief overview of how we’ll accomplish it. Before you start the second step, try to plan how you would complete the section. As you finish the rest of the steps, reflect on how your solution compares to ours.
+```sh
+npm run start
+```
 
-This is a long project, but we’ll be with you every step of the way. Whether you’re completing assessments without the additional steps or banging your head against the wall trying to understand a hint, always use best practices and reflect on your growth. If you get stuck or just want to see how a seasoned developer tackles this project, click “get help” to see a walkthrough video.
+## Run tests
 
-Good luck!
+```sh
+npm run test
+```
+
+## Author
+
+👤 **Ganchana Youpaisan(Tee)**
+
+* Github: [@https:\/\/github.com\/GanchanaTee](https://github.com/https:\/\/github.com\/GanchanaTee)
+* LinkedIn: [@https:\/\/www.linkedin.com\/in\/ganchana-youpaisan-757823166\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/ganchana-youpaisan-757823166\/)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

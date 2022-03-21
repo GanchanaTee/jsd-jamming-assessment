@@ -1,4 +1,4 @@
-import React,{ useState, useEffect } from 'react'
+import React,{ useState } from 'react'
 import './App.css';
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
@@ -10,11 +10,6 @@ function App() {
   const [searchResults, setSearchResults] = useState([])
   const [playlistName, setPlaylistName] = useState('')
   const [playlistTracks, setPlaylistTracks] = useState([])
-
-  useEffect(() => {
-    // Use to get access token before "GET" or "POST" : Parameter Header must be Authorization: Bearer <Access Token>
-    Spotify.getAccessToken()
-  }, []);
 
   const addTrack = (track) => {
     let tracks = [...playlistTracks];
