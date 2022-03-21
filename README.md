@@ -38,13 +38,15 @@ If isRemoval is true, it from Playlist. else it from SearchResults
 * Spotify API in Spotify.js have 3 functions in class component
   * getAccessToken : get access token to have permission in spotify account
     <img src="./src/components/img/getAccessToken.PNG" alt="not found" title="Get Access Token">
-    Send request to spotifyURL that follow spotify doc with playlist-modify-public in added parameter 
-    ref: https://developer.spotify.com/documentation/general/guides/authorization/implicit-grant/
+    Send request to spotifyURL that follow spotify doc with playlist-modify-public in added parameter /n
+    REF: https://developer.spotify.com/documentation/general/guides/authorization/implicit-grant/
          https://developer.spotify.com/documentation/general/guides/authorization/scopes/#playlist-modify-public
-  * search : GET track that match with your input term in spotify
-    ref: https://developer.spotify.com/documentation/web-api/reference/#/operations/search
-  * savePlaylist : POST new playlist that you created nad PUT track to this playlist
-    ref: https://developer.spotify.com/documentation/web-api/reference/#/operations/create-playlist
+
+  * search : GET track that match with your input term in spotify /n
+    REF: https://developer.spotify.com/documentation/web-api/reference/#/operations/search
+
+  * savePlaylist : POST new playlist that you created nad PUT track to this playlist /n
+    REF: https://developer.spotify.com/documentation/web-api/reference/#/operations/create-playlist
          https://developer.spotify.com/documentation/web-api/reference/#/operations/reorder-or-replace-playlists-tracks
 
 ## Install
