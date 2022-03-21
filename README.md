@@ -34,7 +34,7 @@ If isRemoval is true, it from Playlist. else it from SearchResults
 
 * Spotify API in Spotify.js have 3 functions in class component
   * getAccessToken : get access token to have permission in spotify account
-    <img src="./src/components/img/getAccessToken.PNG" alt="not found" title="Get Access Token">
+    <img src="./src/components/img/getAccessToken.PNG" alt="not found" title="Get Access Token"> <br />
     Send request to spotifyURL that follow spotify doc with playlist-modify-public in added parameter <br />
     REF: https://developer.spotify.com/documentation/general/guides/authorization/implicit-grant/
          https://developer.spotify.com/documentation/general/guides/authorization/scopes/#playlist-modify-public
