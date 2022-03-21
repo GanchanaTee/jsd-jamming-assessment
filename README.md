@@ -12,7 +12,7 @@ If you want to use or test it, Please send your spotify email to me in ganchana7
 ## Jammming
 <img src="./src/components/img/jammmingPreview.jpg" alt="not found" title="Jammming preview">
 
-# Function : Create a new playlist that you wanted and save it to your spotify account
+### Function : Create a new playlist that you wanted and save it to your spotify account
 
 ## Program structure :
 <img src="./src/components/img/jammmingTreeDiagram.jpg" alt="not found" title="Jammming Tree Diagram">
