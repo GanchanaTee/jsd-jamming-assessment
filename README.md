@@ -7,14 +7,22 @@
 
 ### 🏠 [Homepage](http://jammming-tee.surge.sh/)
 Currently My Spotify API is currently Development mode.
-If you want to use or test it, please send your spotify email to me in ganchana78@gmail.com .
+
+If you want to use or test it, Please send your spotify email to me in ganchana78@gmail.com .
 
 ## Jammming
-<img src="./src/components/img/jammmingPreview.jpg" alt="Employee data" title="Employee Data title">
+<img src="./src/components/img/jammmingPreview.jpg" alt="not found" title="Jammming preview" height="50%">
 
 ## Function :
-*
-*
+* 
+* 
+
+## Program structure :
+<img src="./src/components/img/jammmingTreeDiagram.jpg" alt="not found" title="Jammming Tree Diagram">
+
+
+* 
+* 
 
 ## Install
 
