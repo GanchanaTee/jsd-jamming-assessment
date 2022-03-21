@@ -40,8 +40,8 @@ npm run start
 
 👤 **Ganchana Youpaisan(Tee)**
 
-* Github: [@https://github.com/GanchanaTee](https://github.com/https:\/\/github.com\/GanchanaTee)
-* LinkedIn: [@https://www.linkedin.com/in/ganchana-youpaisan-757823166/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/ganchana-youpaisan-757823166\/)
+* Github: [@GanchanaTee](https://github.com/GanchanaTee)
+* LinkedIn: [@Ganchana Youpasian](hhttps://www.linkedin.com/in/ganchana-youpaisan-757823166)
 
 ## Show your support
 
