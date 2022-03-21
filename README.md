@@ -41,7 +41,7 @@ npm run start
 👤 **Ganchana Youpaisan(Tee)**
 
 * Github: [@GanchanaTee](https://github.com/GanchanaTee)
-* LinkedIn: [@Ganchana Youpasian](hhttps://www.linkedin.com/in/ganchana-youpaisan-757823166)
+* LinkedIn: [@Ganchana Youpaisan](https://www.linkedin.com/in/ganchana-youpaisan-757823166)
 
 ## Show your support
 
